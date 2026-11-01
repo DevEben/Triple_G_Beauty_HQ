@@ -1,0 +1,103 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "scroll": 305,
+      "client": 305,
+      "header": 82,
+      "hero": 82,
+      "heading": 250.60000610351562,
+      "body": 305
+    },
+    {
+      "width": 360,
+      "scroll": 345,
+      "client": 345,
+      "header": 82,
+      "hero": 82,
+      "heading": 250.60000610351562,
+      "body": 345
+    },
+    {
+      "width": 375,
+      "scroll": 360,
+      "client": 360,
+      "header": 82,
+      "hero": 82,
+      "heading": 279.1125030517578,
+      "body": 360
+    },
+    {
+      "width": 390,
+      "scroll": 375,
+      "client": 375,
+      "header": 82,
+      "hero": 82,
+      "heading": 289.45001220703125,
+      "body": 375
+    },
+    {
+      "width": 414,
+      "scroll": 399,
+      "client": 399,
+      "header": 82,
+      "hero": 82,
+      "heading": 305.75,
+      "body": 399
+    },
+    {
+      "width": 430,
+      "scroll": 415,
+      "client": 415,
+      "header": 82,
+      "hero": 82,
+      "heading": 316.6875,
+      "body": 415
+    },
+    {
+      "width": 768,
+      "scroll": 753,
+      "client": 753,
+      "header": 86,
+      "hero": 86,
+      "heading": 284.82501220703125,
+      "body": 753
+    },
+    {
+      "width": 1024,
+      "scroll": 1009,
+      "client": 1009,
+      "header": 102,
+      "hero": 102,
+      "heading": 401.4000129699707,
+      "body": 1009
+    },
+    {
+      "width": 1440,
+      "scroll": 1425,
+      "client": 1425,
+      "header": 102,
+      "hero": 102,
+      "heading": 502.95001220703125,
+      "body": 1425
+    }
+  ],
+  "errors": [],
+  "mp4Requests": 5,
+  "status": "PASS",
+  "checks": [
+    "9 widths: no horizontal overflow",
+    "hero clear of header",
+    "no videos requested before play",
+    "menu Escape restores focus",
+    "all section images load",
+    "five MP4s decode and play",
+    "one film plays at a time",
+    "offscreen films pause",
+    "boho filter 6 results",
+    "lightbox opens/closes",
+    "new style route/canonical",
+    "reduced motion",
+    "both booking contacts"
+  ]
+}

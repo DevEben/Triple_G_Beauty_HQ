@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    "prerendered homepage hydrates",
+    "query-filtered collection hydrates",
+    "both new detail routes hydrate",
+    "reduced motion hydrates",
+    "21 sitemap URLs",
+    "404 noindex",
+    "single canonical and JSON-LD in generated HTML"
+  ]
+}

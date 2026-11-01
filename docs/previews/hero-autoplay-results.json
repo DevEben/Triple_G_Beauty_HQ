@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    "Craft to Expression to Detail without scrolling",
+    "pause/resume freezes and resumes timeline",
+    "one pass finishes on Detail",
+    "replay starts Craft again",
+    "completed story releases scroll runway",
+    "scroll takeover stays continuous and stops timer",
+    "scene controls animate in place",
+    "focus pauses story actions",
+    "reduced motion disables autoplay",
+    "nine widths have no overflow"
+  ]
+}

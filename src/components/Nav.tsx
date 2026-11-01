@@ -6,7 +6,7 @@ import { generalBooking } from '../lib/whatsapp'
 import { Logo } from './Logo'
 import { trapDialogFocus } from '../lib/dialog'
 
-const links = [{ label: 'The collection', to: '/portfolio' }, { label: 'Our craft', to: '/#studio' }, { label: 'Signature styles', to: '/#styles' }]
+const links = [{ label: 'The collection', to: '/portfolio' }, { label: 'Our craft', to: '/#craft' }, { label: 'Films', to: '/#films' }, { label: 'Signature styles', to: '/#styles' }]
 export function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [compact, setCompact] = useState(false)
@@ -29,8 +29,3 @@ export function Nav() {
     <dialog ref={dialogRef} id="mobile-menu" className="mobile-menu" aria-label="Navigation menu" onKeyDown={trapDialogFocus} onCancel={event => { event.preventDefault(); close() }} onClose={() => setOpen(false)}><div className="mobile-menu-top"><Logo /><button className="icon-button" onClick={close} aria-label="Close menu" autoFocus><X /></button></div><nav aria-label="Mobile primary"><Link to="/" onClick={close}>Home</Link>{links.map(link => <Link key={link.label} to={link.to} onClick={close}>{link.label}<ArrowUpRight size={25} /></Link>)}</nav><div className="mobile-menu-bottom"><a href={generalBooking()} target="_blank" rel="noopener noreferrer" className="book-button button-light">Book on WhatsApp <ArrowUpRight size={20} /></a><p>{business.hours}</p></div></dialog>
   </>
 }
-
-
-
-
-

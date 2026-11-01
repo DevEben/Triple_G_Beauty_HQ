@@ -13,3 +13,5 @@ After deploying:
 4. Keep the brand name and website link consistent on TikTok and other real business profiles.
 
 Google decides when to crawl, index and rank pages. These changes improve discoverability; they do not guarantee a search position or immediate appearance. No address, reviews or ratings have been invented. Add verified business location details before considering local-business structured data.
+
+The premium experience update adds the two supplied hairstyle pages (21 indexable URLs total), confirmed Gbagada/Lagos metadata, original logo, secondary contact line and area-served information. The older singular/plural brand names remain supported as aliases.

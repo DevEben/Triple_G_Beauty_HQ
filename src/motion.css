@@ -1,0 +1,48 @@
+/* Master opening, with a consistent photographic motion language beyond it. */
+.site-header.header-overlay { color:#fff; background:linear-gradient(180deg,#1b1411cc,#1b14114d); box-shadow:none; }
+.header-overlay .original-logo { color:#f0d7bf; }
+.site-header.header-compact { background:transparent; box-shadow:none; }
+.header-compact .original-logo { color:var(--terracotta); }
+.motion-heading .heading-line { display:block; overflow:clip; padding-bottom:.16em; margin-bottom:-.16em; }
+.motion-heading .heading-line-inner { display:block; transform-origin:left bottom; }
+.heading-reveal { min-width:0; }
+.image-reveal { transform-origin:center top; }
+.portfolio-grid { position:relative; }
+.gallery-filters button { position:relative; isolation:isolate; overflow:hidden; }
+.gallery-filters button[aria-pressed=true] { background:transparent; }
+.filter-indicator { position:absolute; inset:0; z-index:-1; background:var(--espresso); border-radius:inherit; }
+.filter-label { position:relative; z-index:1; }
+.style-row { transition:background .35s var(--ease),padding .35s var(--ease); }
+.style-row:hover { background:#ffffff08; }
+.style-row svg { transition:transform .45s var(--ease); }
+.style-row:hover svg { transform:translate(4px,-4px) rotate(5deg); }
+.book-button { transition:background .3s,color .3s,transform .3s var(--ease); }
+.book-button:active { transform:scale(.975); }
+.lightbox[open] { animation:preview-arrival .3s var(--ease); }
+.lightbox figure>img { animation:preview-photo .5s var(--ease); }
+.lightbox figcaption { animation:preview-caption .45s var(--ease); }
+.client-film-frame { overflow:hidden; }
+.client-film video { transition:filter .4s; }
+.client-film:hover video { filter:brightness(1.035); }
+.cinema-image-1:after { content:'Campaign / Expression'; position:absolute; top:112px; right:40px; font-size:8px; color:#fff; letter-spacing:.12em; text-transform:uppercase; z-index:3; }
+.cinema-image-2:after { content:'Campaign / Detail'; position:absolute; top:112px; right:40px; font-size:8px; color:#fff; letter-spacing:.12em; text-transform:uppercase; z-index:3; }
+@keyframes preview-arrival { from {opacity:0} to {opacity:1} }
+@keyframes preview-photo { from {opacity:.5;transform:scale(.97)} to {opacity:1;transform:scale(1)} }
+@keyframes preview-caption { from {opacity:0;transform:translateY(10px)} to {opacity:1;transform:translateY(0)} }
+@media(max-width:800px) { .cinema-image-1:after,.cinema-image-2:after {right:24px;top:100px;} }
+@media(prefers-reduced-motion:reduce) {
+ .heading-line-inner,.image-reveal { transform:none!important; }
+ .image-reveal { clip-path:none!important; }
+ .filter-indicator { transform:none!important; }
+ .portfolio-piece { transform:none!important; opacity:1!important; }
+}
+/* Keep each photograph's crop stable during category reordering. */
+.portfolio-grid .portfolio-piece .gallery-image>img { aspect-ratio:4/5; }
+.portfolio-grid .portfolio-piece[data-crop=tall] .gallery-image>img { aspect-ratio:3/4; }
+.portfolio-grid .portfolio-piece[data-crop=square] .gallery-image>img { aspect-ratio:1; }
+/* An automatic story never scrolls the document. Scrolling takes over from the current frame. */
+.cinema-story-actions { display:flex; align-items:center; gap:22px; }
+.hero-story-progress { position:absolute; bottom:0; left:0; right:0; height:2px; z-index:7; background:var(--terracotta); transform-origin:left center; pointer-events:none; }
+@media(max-width:560px) { .cinema-story-actions { gap:16px; } }
+@media(prefers-reduced-motion:reduce) { .hero-story-progress { display:none; } }
+

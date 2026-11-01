@@ -8,8 +8,8 @@ test('filtered galleries share a clean canonical URL', () => {
   assert.equal(pageSeo('/portfolio?category=boho#main').canonical, `${origin}/portfolio`)
 })
 test('all real styles have their own title, canonical and social image', () => {
-  assert.equal(indexablePaths.length, 19)
-  assert.equal(new Set(indexablePaths).size, 19)
+  assert.equal(indexablePaths.length, 21)
+  assert.equal(new Set(indexablePaths).size, 21)
   const page = pageSeo('/portfolio/boho-1')
   assert.match(page.title, /Boho Braids I.*Triple G/)
   assert.equal(page.canonical, `${origin}/portfolio/boho-1`)
@@ -29,7 +29,7 @@ test('HTML metadata escapes untrusted text and exposes brand identity', () => {
 })
 test('sitemap contains only absolute canonical page URLs', () => {
   const xml = sitemapXml()
-  assert.equal((xml.match(/<loc>/g) || []).length, 19)
+  assert.equal((xml.match(/<loc>/g) || []).length, 21)
   assert.match(xml, /https:\/\/triplegbeautyhq.vercel.app\/portfolio\/cornrows-1/)
   assert.doesNotMatch(xml, /\?category|#|missing|localhost/)
 })
