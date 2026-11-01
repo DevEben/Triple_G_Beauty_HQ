@@ -1,0 +1,35 @@
+{
+  "headingMotion": [
+    {
+      "y": 93.0052,
+      "transform": "matrix(0.99974, 0.0227884, -0.0227884, 0.99974, 0, 93.0052)"
+    },
+    {
+      "y": 31.0451,
+      "transform": "matrix(0.999971, 0.00760736, -0.00760736, 0.999971, 0, 31.0451)"
+    },
+    {
+      "y": 21.0386,
+      "transform": "matrix(0.999987, 0.00515536, -0.00515536, 0.999987, 0, 21.0386)"
+    }
+  ],
+  "filterMotion": [
+    "matrix(1, 0, 0, 1, 0, 628.65)",
+    "matrix(1, 0, 0, 1, 0, 167.749)",
+    "matrix(1, 0, 0, 1, 0, 81.9669)"
+  ],
+  "detailHeadingMotion": true,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    "master hero three scenes",
+    "compact header",
+    "9 widths no overflow",
+    "heading transform sampled mid-animation",
+    "animated filtering and stable final layout",
+    "lightbox image navigation",
+    "detail heading motion",
+    "reduced-motion hero and headings",
+    "new media retained"
+  ]
+}

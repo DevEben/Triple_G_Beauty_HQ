@@ -4,13 +4,13 @@ export const indexablePaths = ['/', '/portfolio', ...portfolio.map(item => `/por
 export function pageSeo(input: string) {
   const path = new URL(input, siteUrl).pathname.replace(/\/+$/, '') || '/'
   const item = portfolio.find(item => path === `/portfolio/${item.slug}`)
-  const title = path === '/' ? `${business.name} | Knotless Braids, Cornrows & Boho Styles` : path === '/portfolio' ? `Hairstyle Collection | ${business.name}` : item ? `${item.title} | ${business.name}` : `Page not found | ${business.name}`
-  const description = item ? `${item.title} by ${business.name}. Explore this finished look, discover more braided hairstyles and book your next style on WhatsApp.` : `Discover ${business.name}: carefully crafted knotless braids, cornrows, boho braids and kids hairstyles. Browse our real work and book on WhatsApp.`
+  const title = path === '/' ? `${business.name} | Hair Braiding in Gbagada, Lagos` : path === '/portfolio' ? `Hairstyle Collection | ${business.name}` : item ? `${item.title} | ${business.name}` : `Page not found | ${business.name}`
+  const description = item ? `${item.title} by ${business.name} in Gbagada, Lagos. Explore this finished look, discover more braided hairstyles and book your next style on WhatsApp.` : `Discover ${business.name}: hair braiding in Gbagada, Lagos. Knotless braids, cornrows, boho braids and protective hairstyles for adults and kids. Browse our real work and book on WhatsApp.`
   return { title, description, canonical: `${siteUrl}${path === '/' ? '/' : path}`, image: `${siteUrl}${item?.coverImage || '/media/photos/cornrows-1.webp'}`, robots: indexablePaths.includes(path) ? 'index, follow, max-image-preview:large' : 'noindex, follow', type: 'website' }
 }
 export function structuredData() {
   return { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'Organization', '@id': `${siteUrl}/#business`, name: business.name, alternateName: ['Triple G Beauty and Braid', 'Triple G Beauty HQ'], url: `${siteUrl}/`, logo: `${siteUrl}/logo-transparent-bronze.png`, telephone: `+${business.whatsapp}`, sameAs: [business.tiktok] },
+    { '@type': 'Organization', '@id': `${siteUrl}/#business`, name: business.name, alternateName: ['Triple G Beauty and Braid', 'Triple G Beauty and Braids'], url: `${siteUrl}/`, logo: `${siteUrl}/logo.jpg`, telephone: `+${business.whatsapp}`, sameAs: [business.tiktok], areaServed: { '@type': 'Place', name: business.location }, contactPoint: [{ '@type': 'ContactPoint', telephone: `+${business.secondaryWhatsapp}`, contactType: 'appointments' }] },
     { '@type': 'WebSite', url: `${siteUrl}/`, name: business.name, alternateName: 'Triple G Beauty and Braid', publisher: { '@id': `${siteUrl}/#business` }, inLanguage: 'en' },
   ] }
 }

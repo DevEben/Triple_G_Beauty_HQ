@@ -1,9 +1,12 @@
 export const business = {
-  name: 'Triple G Beauty and Braids',
+  name: 'Triple G Beauty HQ',
   headline: 'Every Braid. A Work of Art.',
   tagline: 'Precision. Neatness. Lasting Beauty.',
   whatsapp: '2348155229821',
   phone: '08155229821',
+  secondaryPhone: '08168861418',
+  secondaryWhatsapp: '2348168861418',
+  location: 'Gbagada, Lagos',
   tiktok: 'https://www.tiktok.com/@triplegbeautyhq',
   tiktokHandle: '@triplegbeautyhq',
   hours: 'Monday–Friday, 9 AM–4 PM',
@@ -23,8 +26,11 @@ export const nav = [
   { label: 'Book', to: '/#book' },
 ]
 
-/** DEV PLACEHOLDERS: drop real files in /public/media and update paths below. */
+/** Supplied brand photographs. See docs/media-provenance.md. */
 export const media = {
+  owner: '/media/photos/brand-owner.webp',
+  finished: '/media/photos/boho-client.jpg',
+  sculpted: '/media/photos/sculpted-cornrows.webp',
   hero: '/media/photos/braiding-craft.png',
   process: '/media/photos/process.webp',
   details: '/media/photos/details.webp',
@@ -43,6 +49,8 @@ const mk = (category: CategoryId, n: number, title: string, featured: boolean): 
 })
 /** Display order. First six are featured on the homepage. Rename titles/descriptions as needed. */
 export const portfolio: PortfolioItem[] = [
+  { ...mk('boho', 6, 'Honey-brown Boho Braids', true), coverImage: '/media/photos/boho-client.jpg', images: ['/media/photos/boho-client.jpg'] },
+  { ...mk('cornrows', 9, 'Sculpted Cornrow Bun', true), coverImage: '/media/photos/sculpted-cornrows.webp', images: ['/media/photos/sculpted-cornrows.webp'] },
   mk('cornrows', 1, 'Cornrows I', true),
   mk('boho', 1, 'Boho Braids I', true),
   mk('kids', 1, 'Kids Hair I', true),
@@ -68,8 +76,11 @@ export const services = [
   { category: 'kids' as CategoryId, title: 'Kids Hair', line: 'Neat, comfortable styles for little ones.' },
 ]
 export const videos = [
-  { src: '/media/videos/craft-1.mp4', poster: '/media/videos/craft-1.webp', label: 'Braiding in progress' },
-  { src: '/media/videos/craft-2.mp4', poster: '/media/videos/craft-2.webp', label: 'Finished style' },
+  { src: '/media/videos/client-1.mp4', poster: '/media/videos/client-1.jpg', label: 'A new week. A new look.' },
+  { src: '/media/videos/client-2.mp4', poster: '/media/videos/client-2.jpg', label: 'The finished feeling' },
+  { src: '/media/videos/client-3.mp4', poster: '/media/videos/client-3.jpg', label: 'Our beautiful client' },
+  { src: '/media/videos/client-4.mp4', poster: '/media/videos/client-4.jpg', label: 'A little slay' },
+  { src: '/media/videos/client-5.mp4', poster: '/media/videos/client-5.jpg', label: 'Pretty hair. Personal style.' },
 ]
 
 

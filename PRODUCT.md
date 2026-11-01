@@ -23,3 +23,6 @@ Mara Voss was rejected for palette fit. Avoid generic salon service cards, inven
 
 ## Accessibility & Inclusion
 Readable contrast, keyboard access, native dialog focus containment, visible focus, reduced-motion support and responsive layouts.
+
+## Current hero direction
+The master branch's full-screen three-chapter opening is the preferred hero. Preserve it when improving the rest of the experience. Use the new supplied photographs and films in the portfolio, owner story and film gallery.

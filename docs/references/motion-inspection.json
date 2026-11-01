@@ -1,0 +1,74 @@
+[
+  {
+    "name": "serena",
+    "url": "https://www.serenacongiu.com/",
+    "before": {
+      "title": "Serena Congiu",
+      "scrollY": 0,
+      "animations": [],
+      "images": [
+        {
+          "transform": "none",
+          "width": 347
+        },
+        {
+          "transform": "none",
+          "width": 404
+        },
+        {
+          "transform": "none",
+          "width": 337
+        },
+        {
+          "transform": "none",
+          "width": 255
+        },
+        {
+          "transform": "none",
+          "width": 241
+        }
+      ]
+    },
+    "after": {
+      "scrollY": 0,
+      "animations": 0,
+      "images": [
+        {
+          "transform": "none",
+          "width": 245
+        },
+        {
+          "transform": "none",
+          "width": 265
+        },
+        {
+          "transform": "none",
+          "width": 330
+        },
+        {
+          "transform": "none",
+          "width": 403
+        },
+        {
+          "transform": "none",
+          "width": 333
+        }
+      ]
+    }
+  },
+  {
+    "name": "anorak",
+    "url": "https://anorakfilm.com/",
+    "before": {
+      "title": "ANORAK",
+      "scrollY": 0,
+      "animations": [],
+      "images": []
+    },
+    "after": {
+      "scrollY": 0,
+      "animations": 0,
+      "images": []
+    }
+  }
+]
